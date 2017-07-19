@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My portfolio</title>
+	<!-- Сбрасываем стандартные стили браузера -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Подключаем шрифт -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<!-- Подключаем свой файл со стилями -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<section id="main">
+		<div class="main-header">
+			<h1>Юсифзаде Шабнам</h1>
+		    <span class="main-line"></span>
+			  <p>Верстка адаптивных страниц на<br> HTML и CSS<br>
+			     Разработка сайтов под ключ с использованием<br> jQuery, Bootstrap, Sass(Less)
+			  </p>
+		</div>
+		<a href="#portfolio">
+			<div class="main-arrow"></div>
+		</a>
+	</section>
+	<section id="portfolio">
+		<h2 class="portfolio-header">Портфолио</h2>
+		<div class="portfolio-works container">
+			<div class="portfolio-box">
+				<img src="img/portfolio/1.jpg" alt="Первая работа">
+				<a target="blank" href="https://lifelib-library.github.io">Смотреть работу</a>
+			</div>
+			<div class="portfolio-box">
+				<img src="img/portfolio/2.jpg" alt="Вторая работа">
+				<a target="blank" href="https://summer-brandon.github.io">Смотреть работу</a>
+			</div>
+			<div class="portfolio-box">
+				<img src="img/portfolio/3.jpg" alt="Третья работа">
+				<a target="blank" href="https://university-register.github.io">Смотреть работу</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-info">
+				<p class="footer-head">
+				Юсифзаде Шабнам
+				</p>
+				<p>Разработка сайтов <br>под ключ</p>
+			</div>
+			<div class="social-links">
+			    <p class="footer-head">Подпишитесь</p>
+				<a href="https://vk.com/s.yusifli">
+					<picture>
+					<source type="image/svg+xml" srcset="img/svg/vk.svg"></source>
+					<img class= "vk" src="img/png/vk.png" alt="Вконтакте">
+				</picture>
+				</a>
+				<a href="https://www.instagram.com/shebish0415/">
+					<picture>
+					<source type="image/svg+xml" srcset="img/svg/instagram.svg"></source>
+					<img src="img/png/instagram.png" alt="Инстаграм">
+				</picture>
+				</a>
+				<a href="#">
+					<picture>
+					<source type="image/svg+xml" srcset="img/svg/twitter.svg"></source>
+					<img src="img/png/twitter.png" alt="
+					++Твиттер">
+				</picture>
+				</a>
+			</div>
+			<div class="callback">
+				<p class="footer-head">Напишите мне</p>
+				<a class="footer-btn" target="blank" href="https://www.facebook.com/profile.php?id=100010659221190&ref=bookmarks">Заказать сайт</a>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $("#main").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+
+	</script>
+</body>
+</html>

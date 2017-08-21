@@ -88,6 +88,11 @@ section#portfolio {
 	font-size: 1.5rem;
 }
 
+.portfolio-box a:hover {
+        color: #fff;
+	background-color: #555;
+}
+
 .container {
 	font-size: 0;
 	margin: 0 auto;

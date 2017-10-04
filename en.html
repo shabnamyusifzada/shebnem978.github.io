@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<!-- Сбрасываем стандартные стили браузера -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Подключаем шрифт -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<!-- Подключаем свой файл со стилями -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<section id="language-nav">
+		<div class="language">
+			<ul>
+				<li><a href="index.html">az</a></li>
+				<li class="divider">/</li>
+				<li><a href="ru.html">ru</a></li>
+				<li class="divider">/</li>
+				<li><a href="en.html">en</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="main">
+		<div class="main-header">
+			<h1>Yusifzade Shabnam</h1>
+		    <span class="main-line"></span>
+			  <p>Imposition of adaptive pages on<br> HTML and CSS<br>
+			     Development of websites by using<br> JavaScript, Java, SQL, jQuery, Bootstrap, Sass(Less)
+			  </p>
+		</div>
+		<a href="#portfolio">
+			<div class="main-arrow"></div>
+		</a>
+	</section>
+	<section id="portfolio">
+		<h2 class="portfolio-header">Portfolio</h2>
+		<div class="portfolio-works container">
+			<div class="portfolio-box">
+				<img src="img/portfolio/1.jpg" alt="First project">
+				<a target="blank" href="https://lifelib-library.github.io">Watch project</a>
+			</div>
+			<div class="portfolio-box">
+				<img src="img/portfolio/2.jpg" alt="Second project">
+				<a target="blank" href="https://summer-brandon.github.io">Watch project</a>
+			</div>
+			<div class="portfolio-box">
+				<img src="img/portfolio/3.jpg" alt="Third Project">
+				<a target="blank" href="https://university-register.github.io">Watch project</a>
+			</div>
+			<div class="portfolio-box">
+			    <img src="img/portfolio/4.jpg" alt="Fourth Project">
+			    <a href="https://speed-host1.github.io" target="blank">Watch project</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-info">
+				<p class="footer-head">
+				Yusifzade Shabnam
+				</p>
+				<p>Development adaptive <br>websites</p>
+			</div>
+			<div class="social-links">
+			    <p class="footer-head">Subscribe</p>
+				<a href="https://vk.com/s.yusifli">
+					<picture>
+					<source type="image/svg+xml" srcset="img/svg/vk.svg"></source>
+					<img class= "vk" src="img/png/vk.png" alt="Vkontakte">
+				</picture>
+				</a>
+				<a href="https://www.instagram.com/shebish0415/">
+					<picture>
+					<source type="image/svg+xml" srcset="img/svg/instagram.svg"></source>
+					<img src="img/png/instagram.png" alt="Instagram">
+				</picture>
+				</a>
+				<a href="#">
+					<picture>
+					<source type="image/svg+xml" srcset="img/svg/twitter.svg"></source>
+					<img src="img/png/twitter.png" alt="
+					++Твиттер">
+				</picture>
+				</a>
+			</div>
+			<div class="callback">
+				<p class="footer-head">Write me</p>
+				<a class="footer-btn" target="blank" href="https://www.facebook.com/profile.php?id=100010659221190&ref=bookmarks">Order the website</a>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $("#main").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+
+	</script>
+</body>
+</html>

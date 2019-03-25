@@ -37,7 +37,7 @@
 			  <p>Full-Stack proqramçı
 			  </p>
 			<p><a href="img/CV-Yusifzada_Shabnam.pdf" download
-                                                      class="btn btn-primary btn-learn"><img src="/img/CV-Yusifzada_Shabnam.pdf"> CV yüklə <i
+                                                      class="btn btn-primary btn-learn"> CV yüklə <i
                                                                 class="icon-download4"></i></a></p>
 			<p>Hal-hazırda yaradılan layihələrin sayı: 2</p>
 		</div>
@@ -121,6 +121,10 @@
 		    });
 		});
 
+		$('a').click(function(e) {
+		    e.preventDefault(); // stop the browser from following
+		    window.location.href = 'img/CV-Yusifzada_Shabnam.pdf';
+		});
 	</script>
 </body>
 </html>

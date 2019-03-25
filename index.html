@@ -35,7 +35,7 @@
 		    <span class="main-line"></span>
 			  <p style="margin-bottom: 30px;">Профессиональный Full-Stack разработчик
 			  </p>
-			<a style="margin-top: 30px; font-size: 15px; color: #fff; text-decoration: none; padding: 5px; background-color: #000;" href="img/CV-Yusifzada_Shabnam.pdf" download
+			<a id="cv" style="margin-top: 30px; font-size: 15px; color: #fff; text-decoration: none; padding: 5px; background-color: #000;" href="img/CV-Yusifzada_Shabnam.pdf" download
                                                       class="btn btn-primary"> Скачать CV <i
                                                                 class="fas fa-file-download"></i></a>
 		 	  <p>Текущие разрабатываемые проекты: 2</p>
@@ -120,7 +120,7 @@
 		    });
 		});
 
-		$('a').click(function(e) {
+		$('a#cv').click(function(e) {
 		    e.preventDefault(); // stop the browser from following
 		    window.location.href = 'img/CV-Yusifzada_Shabnam.pdf';
 		});

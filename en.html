@@ -33,6 +33,9 @@
 			<h1>Yusifzada Shabnam</h1>
 		    <span class="main-line"></span>
 			  <p>Full-Stack Developer</p>
+			 <a style="margin-top: 30px; font-size: 15px; color: #fff; text-decoration: none; padding: 5px; background-color: #000;" href="img/CV-Yusifzada_Shabnam.pdf" download
+                                                      class="btn btn-primary"> Download CV <i
+                                                                class="icon-download4"></i></a>
 			<p>Current developed projects: 2</p>
 		</div>
 		<a href="#portfolio">
@@ -113,6 +116,11 @@
 		            top = $(id).offset().top;
 		        $('body,html').animate({scrollTop: top}, 1500);
 		    });
+		});
+		
+		$('a').click(function(e) {
+		    e.preventDefault(); // stop the browser from following
+		    window.location.href = 'img/CV-Yusifzada_Shabnam.pdf';
 		});
 
 	</script>
